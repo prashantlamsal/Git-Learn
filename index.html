@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShopEase - Your Online Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: #f6f7fb;
+            color: #222;
+        }
+        header {
+            background: linear-gradient(90deg, #4f8cff 60%, #6edb8f 100%);
+            color: #fff;
+            padding: 24px 0 16px 0;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+        nav {
+            margin-top: 12px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #222;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 48px 10vw 32px 10vw;
+            background: #fff;
+            border-radius: 0 0 32px 32px;
+            box-shadow: 0 4px 24px rgba(79,140,255,0.07);
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+        .hero-text {
+            max-width: 500px;
+        }
+        .hero-text h2 {
+            font-size: 2rem;
+            margin-bottom: 12px;
+            color: #4f8cff;
+        }
+        .hero-text p {
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+            color: #555;
+        }
+        .hero-text button {
+            background: #4f8cff;
+            color: #fff;
+            border: none;
+            padding: 12px 32px;
+            border-radius: 24px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(79,140,255,0.15);
+            transition: background 0.2s;
+        }
+        .hero-text button:hover {
+            background: #3570d4;
+        }
+        .hero-img img {
+            width: 320px;
+            max-width: 90vw;
+            border-radius: 24px;
+            box-shadow: 0 4px 24px rgba(110,219,143,0.15);
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 32px;
+            padding: 0 10vw 48px 10vw;
+        }
+        .product-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            padding: 18px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .product-card:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 8px 24px rgba(79,140,255,0.12);
+        }
+        .product-card img {
+            width: 100%;
+            max-width: 180px;
+            border-radius: 12px;
+            margin-bottom: 14px;
+        }
+        .product-card h3 {
+            margin: 0 0 8px 0;
+            font-size: 1.1rem;
+            color: #333;
+        }
+        .product-card p {
+            color: #6edb8f;
+            font-weight: 700;
+            margin: 0 0 12px 0;
+            font-size: 1.1rem;
+        }
+        .product-card button {
+            background: #6edb8f;
+            color: #fff;
+            border: none;
+            padding: 8px 22px;
+            border-radius: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .product-card button:hover {
+            background: #4f8cff;
+        }
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 18px 0;
+            margin-top: 32px;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+        }
+        @media (max-width: 900px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 32px 4vw 24px 4vw;
+            }
+            .hero-img {
+                margin-top: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ShopEase</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Deals</a>
+            <a href="#">Contact</a>
+            <a href="#">Cart</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Discover the Latest Trends</h2>
+            <p>ShopEase brings you the best deals on fashion, electronics, and more. Enjoy fast delivery and secure checkout!</p>
+            <button>Shop Now</button>
+        </div>
+        <div class="hero-img">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=600&q=80" alt="Shopping Bags">
+        </div>
+    </section>
+    <section class="products">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1513708927688-890fe8a1df19?auto=format&fit=crop&w=400&q=80" alt="Sneakers">
+            <h3>Trendy Sneakers</h3>
+            <p>$49.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&q=80" alt="Headphones">
+            <h3>Wireless Headphones</h3>
+            <p>$89.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Watch">
+            <h3>Smart Watch</h3>
+            <p>$129.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1512499617640-c2f999098c01?auto=format&fit=crop&w=400&q=80" alt="Handbag">
+            <h3>Classic Handbag</h3>
+            <p>$59.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 ShopEase. All rights reserved.
+    </footer>
+</body>
+</html>
